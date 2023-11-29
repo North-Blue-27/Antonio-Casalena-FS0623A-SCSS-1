@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+display-role,
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-brand img {
+  margin-right: 20px;
+}
+.navbar .navbar-nav ul {
+  list-style: none;
+  display: flex;
+}
+.navbar .navbar-nav ul li {
+  margin-right: 20px;
+}
+.navbar .navbar-nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.navbar .navbar-nav ul li a:hover {
+  color: #000;
+}
+
+.hero {
+  background-color: #640fc5;
+  padding: 100px 0;
+  text-align: center;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-right: 20px;
+}
+.hero .container .content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.hero .container .content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.hero .container .content .buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.hero .container .content .buttons .btn.primary {
+  background-color: #007bff;
+}
+.hero .container .content .buttons .btn.warning {
+  background-color: #ff8700;
+}
+.hero .container .content .buttons .btn.success {
+  background-color: #28a745;
+}
+.hero .container .content .buttons .btn:hover {
+  transform: scale(0.95);
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.grid .container {
+  display: flex;
+  justify-content: center;
+}
+.grid .container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid .container .grid-container .grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,136 @@
+@import "partials/reset";
+@import "partials/font";
+@import "partials/colori";
+@import "partials/animazioni";
+
+body{
+    font-family: $font;
+    color: $textColor;
+}
+
+.navbar {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        margin-right: 20px;
+    }
+
+    .navbar-nav ul {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                color: #333;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+.hero {
+    background-color: $bg_hero;
+    padding: 100px 0;
+    text-align: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            margin-right: 20px;
+
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.2em;
+                margin-bottom: 30px;
+            }
+
+            .buttons {
+                .btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    margin-right: 15px;
+                    text-decoration: none;
+                    color: #fff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+        
+                    &.primary {
+                        background-color: #007bff;
+                    }
+        
+                    &.warning {
+                        background-color: #ff8700;
+                    }
+        
+                    &.success {
+                        background-color: #28a745;
+                    }
+        
+                    &:hover {
+                        transform: $hoverButton;
+                    }
+                }
+            }
+        }
+            }
+        }
+    
+
+.image {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.grid {
+    background-color: #fff;
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            .grid-item {
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
